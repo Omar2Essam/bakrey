@@ -1,0 +1,344 @@
+/* Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+.header {
+    min-height: 100%;
+    width: 100%;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 70px;
+    padding: 20px;
+}
+
+.text-box p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn1,
+.btn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    position: relative;
+    margin: 10px 5px;
+    /* Add some margin for spacing between buttons */
+}
+
+.btn1 {
+    background-color: #8e7754;
+    border: 0.5px solid #8e7754;
+}
+
+.btn1:hover {
+    background: #fff;
+    color: black;
+    transition: 1s;
+}
+
+.btn2 {
+    border: 0.5px solid #fff;
+}
+
+.btn2:hover {
+    background: #8e7754;
+    transition: 1s;
+}
+
+/* About Section */
+.about {
+    width: 90%;
+    margin: auto;
+}
+
+.about-img {
+    width: 40%;
+    float: left;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.abouttext {
+    width: 50%;
+    float: right;
+    font-size: 15px;
+    margin: 10px;
+    color: #686868;
+}
+
+.about h2 {
+    color: black;
+}
+
+.about ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+/* Clearfix */
+.clr {
+    clear: both;
+}
+
+/* Offer Section */
+.offer {
+    background-color: rgba(231, 234, 240, 0.822);
+    margin: 50px 0px;
+    padding: 10px;
+}
+
+.offer-img {
+    padding: 2%;
+    display: inline-block;
+    width: 50%;
+}
+
+.offer-text {
+    display: inline;
+    float: left;
+    width: 40%;
+    color: rgba(0, 0, 0, 0.788);
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.offer-text p {
+    color: #686868;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+}
+
+.gallery p {
+    color: #686868;
+}
+
+.sec3 {
+    float: left;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.sec3 img {
+    width: 100%;
+}
+
+/* Map Section */
+.map {
+    background-color: rgba(231, 234, 240, 0.822);
+    padding-left: 9%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.maptext {
+    display: inline;
+    float: left;
+    width: 41%;
+    color: #686868;
+    margin-right: 7%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.maptext h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.maptext ul li img {
+    background-color: #8e7754;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.mapwi {
+    width: 35%;
+}
+
+/* Contact Section */
+.bgcontact {
+    background-color: #403D38;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.contact {
+    width: 90%;
+    margin: auto;
+}
+
+.about-us {
+    width: 25%;
+    float: left;
+    color: #686868;
+}
+
+.about-us h5 {
+    color: #fff;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #353330;
+    color: #777777;
+}
+
+.facebook:hover {
+    background-color: #3B5998;
+    border-radius: 50%;
+}
+
+.google:hover {
+    background-color: #E24031;
+    border-radius: 50%;
+}
+
+.linkedin:hover {
+    background-color: #007BB5;
+    border-radius: 50%;
+}
+
+.twitter:hover {
+    background-color: #00ACED;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 15%;
+    margin: auto;
+}
+
+.d-flex li img {
+    background-color: #403D38;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .abouttext {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .offer-text,
+    .offer-img {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .offer-img {
+        margin-bottom: 20px;
+    }
+
+    .maptext,
+    .mapwi {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .mapwi {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec3 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .btn1,
+    .btn2 {
+        display: block;
+        width: 80%;
+        /* Adjust width as necessary */
+        margin: 10px auto;
+        /* Center the buttons */
+    }
+}
+
+@media (max-width: 576px) {
+    .text-box h1 {
+        font-size: 50px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 16px;
+        padding: 10px 20px;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .abouttext,
+    .about-img,
+    .offer-text,
+    .offer-img,
+    .maptext,
+    .mapwi,
+    .sec3,
+    .about-us {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+}
